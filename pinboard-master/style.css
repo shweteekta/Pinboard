@@ -1,0 +1,68 @@
+body {background: #FAFAFA;}
+
+#container {width: 98%; height:96%; padding: 10px;}
+
+#add { 
+cursor: pointer;
+}
+
+#clear { 
+cursor: pointer;
+}
+
+#info { 
+cursor: pointer;
+}
+
+[contenteditable]:focus {outline: 0px solid transparent;}
+
+.card { 
+background: yellow;
+position: absolute;
+text-align: center;
+width: 200px;
+border-radius: 4px;
+box-shadow: 0 6px 10px rgba(0,0,0,.20), 0 0 6px rgba(0,0,0,.20);
+transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,
+.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12); padding: 20px;
+}
+
+#information { 
+background: white;
+position: absolute;
+height: 1em;
+bottom: 21px;
+left: 4%;
+width: 30%;
+z-index: 998;
+opacity: 80%;
+text-align: center;
+border-radius: 4px;
+box-shadow: 0 6px 10px rgba(0,0,0,.20), 0 0 6px rgba(0,0,0,.20);
+transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,
+.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12); padding: 20px;
+}
+	
+.drag_highlight {
+transform: scale(1.03);
+box-shadow: 0 10px 20px rgba(0,0,0,.40), 0 4px 8px rgba(0, 0, 0,.2);	
+}
+
+.delete_highlight{
+transform: scale(1.03);
+box-shadow: 0 10px 20px rgba(0,0,0,.2), 0 4px 8px rgba(255,0,0,.4);
+}
+
+#drag {
+cursor: move;
+position: absolute;
+left: 7px;
+top: 7px;
+}
+
+#delete {
+cursor: pointer;
+position: absolute;
+right: 7px;
+top: 7px;
+}
